@@ -1,35 +1,22 @@
 ## Gerenciamento de Projetos com Redmine
+---
+
+### Introdução
 
 De acordo com [site oficial](https://www.redmine.org/), Redmine é um aplicativo open source da Web de gerenciamento de projetos flexível. Escrito usando o framework Ruby on Rails, é multi-plataforma e cross-database.
 
-### Markdown
+### Principais Características
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Instalando o Redmine
 
-```markdown
-Syntax highlighted code block
+A instalação do Redmine pode ser via:  i) instalador, ii) com Docker ou iii) manualmente.
 
-# Header 1
-## Header 2
-### Header 3
+Neste manual, a instalação será através do Docker. Caso não tenha o Docker instalado, acesse o site oficial [https://www.docker.com/](https://www.docker.com/), faça o download de acordo com o Sistema Operacional da sua máquina. ;)
 
-- Bulleted
-- List
+Instalado o Docker e com o mesmo em execução, vamos criar nosso ambiente.
 
-1. Numbered
-2. List
+Acesse o [Docker Hub](https://hub.docker.com/) e baixe a imagens:
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/PriCampos/config-redmine/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
