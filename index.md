@@ -10,15 +10,15 @@ De acordo com [site oficial](https://www.redmine.org/), Redmine é um aplicativo
 
 * Na gestão de usuários é possível verificar: i) período de acesso, ii) bloquear/desbloquear, iii)definir diferentes papéis por projeto, iv) acesso de usuários anônimos ou não cadastrados com permissões específicas v) entre outras preferências de uso pessoal.
 * Criar grupos de usuários por projeto atentando a papéis e permissões.
-* Personalizar papéis e permissões de forma flexível. Ex: Acesso de gestão de projeto, participar de fóruns visualização de gráficos, repositórios, tipo de tarefas, entre outros.
+* Personalizar papéis e permissões de forma flexível. Ex: Acesso de gestão de projeto, participar de fóruns, visualização de gráficos, repositórios, tipo de tarefas, entre outros.
 * Criar tipos de tarefas e associar a fluxo de trabalhos específicos. Ex: Tarefa de Suporte só tem as fases "em andamento e resolvida", mas, tarefas do tipo bug ou funcionalidade precisa das fases "em andamento, code review, testes".
-* Criar situação das tarefas. Sendo que, a situação pode ser associada ao commit para análise de progressão do projeto. Ex: Pronta para teste significa 60% de progressão e para isso o Redmine ofece recursos associados ao commit.
+* Criar situação das tarefas. Sendo que, a situação pode ser associada ao commit para análise de progressão do projeto. Ex: Pronta para teste significa 60% de progressão e para isso o Redmine oferece recursos associados ao commit.
 * Criar fluxo de trabalho e associá-los a papéis e tipo de tarefas.
 * Criar campos personalizados.
 * Criar categoria de documentos.
 * Criar Prioridade das Tarefas.
 * Criar atividades para registro de horas.
-* Configuração do Redmine flexivel.
+* Configuração do Redmine flexível.
 * Uma lista gigante de plugins para impulsionar o uso do Redmine e também a opção de criar os próprios plugins.
 
 
@@ -100,7 +100,7 @@ Na área logada, clique em Administração > Configurações.
 
 Na aba geral as modificações particulares de cada projeto são título, texto de boas vindas, nome do servidor e subdomínio e Protocolo.
 
-As parametrizações são bem intuitvas, mas, nessa primeira fase é importante atentar as abas:
+As parametrizações são bem intuitivas, mas, nessa primeira fase é importante atentar as abas:
 
 * Exibição: onde é importante definir o idioma.
 
