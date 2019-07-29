@@ -8,7 +8,7 @@ De acordo com [site oficial](https://www.redmine.org/), Redmine é um aplicativo
 
 ### Principais Características
 
-* Na gestão de usuários é possível verificar: i) período de acesso, ii) bloquear/desbloquear, iii)definir diferentes papéis por projeto, iv) entre outras preferências de uso pessoal.
+* Na gestão de usuários é possível verificar: i) período de acesso, ii) bloquear/desbloquear, iii)definir diferentes papéis por projeto, iv) acesso de usuários anônimos ou não cadastrados com permissões específicas v) entre outras preferências de uso pessoal.
 * Criar grupos de usuários por projeto atentando a papéis e permissões.
 * Personalizar papéis e permissões de forma flexível. Ex: Acesso de gestão de projeto, participar de fóruns visualização de gráficos, repositórios, tipo de tarefas, entre outros.
 * Criar tipos de tarefas e associar a fluxo de trabalhos específicos. Ex: Tarefa de Suporte só tem as fases "em andamento e resolvida", mas, tarefas do tipo bug ou funcionalidade precisa das fases "em andamento, code review, testes".
@@ -18,7 +18,7 @@ De acordo com [site oficial](https://www.redmine.org/), Redmine é um aplicativo
 * Criar categoria de documentos.
 * Criar Prioridade das Tarefas.
 * Criar atividades para registro de horas.
-* Configuração flexivel.
+* Configuração do Redmine flexivel.
 * Uma lista gigante de plugins para impulsionar o uso do Redmine e também a opção de criar os próprios plugins.
 
 
@@ -100,7 +100,7 @@ Na área logada, clique em Administração > Configurações.
 
 Na aba geral as modificações particulares de cada projeto são título, texto de boas vindas, nome do servidor e subdomínio e Protocolo.
 
-Em seguida, temos as abas:
+As parametrizações são bem intuitvas, mas, nessa primeira fase é importante atentar as abas:
 
 * Exibição: onde é importante definir o idioma.
 
@@ -118,12 +118,4 @@ As configurações de conexão com o banco de dados, envio de e-mail, entre outr
 
 Os principais arquivos estão no diretório htdocs/config no diretório principal do Redmine.
 
-
-
-
-
-
-
-
-
-
+No caso da instalação com Docker...
