@@ -6,14 +6,15 @@ services:
     image: redmine
     restart: always
     ports:
-      - 8080:3000
+      - 80:3000
     environment:
-      REDMINE_DB_MYSQL: user_redmine
-      REDMINE_DB_PASSWORD: redmine
+      REDMINE_DB_MYSQL: db
+      REDMINE_DB_PASSWORD: priscila
+      REDMINE_DB_DATABASE: priscila
 
   db:
     image: mysql:5.7
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: db_priscila
+      MYSQL_ROOT_PASSWORD: priscila
       MYSQL_DATABASE: priscila

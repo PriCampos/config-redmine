@@ -23,7 +23,9 @@ Acesse o [Docker Hub](https://hub.docker.com/_/redmine) e baixe a imagem Redmine
 
 Exemplo com docker stack deploy: Crie um repositório, no arquivo .yml defina os serviços com a infraestrutura desejada.
 
-stack.yml
+stack.yml 
+
+**(lembre de alterar as senhas e o nome do root do banco e do usuário redmine)**
 
 ```yaml
 version: '3.1'
@@ -34,17 +36,18 @@ services:
     image: redmine
     restart: always
     ports:
-      - 8080:3000
+      - 80:3000
     environment:
-      REDMINE_DB_MYSQL: user_redmine 
-      REDMINE_DB_PASSWORD: redmine 
+      REDMINE_DB_MYSQL: db
+      REDMINE_DB_PASSWORD: priscila
+      REDMINE_DB_DATABASE: priscila
 
   db:
     image: mysql:5.7
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: db_priscila 
-      MYSQL_DATABASE: priscila 
+      MYSQL_ROOT_PASSWORD: priscila
+      MYSQL_DATABASE: priscila
 ```
 
 No repositóri onde foi criado o arquivo Docker Compose, execute:
@@ -53,11 +56,16 @@ No repositóri onde foi criado o arquivo Docker Compose, execute:
 docker-compose -f stack.yml up
 ```
 
-Com os serviços iniciados, acesse o servidor da aplicação: [http://localhost:8080/](http://localhost:8080/)
+Verifique se os serviços foram iniciados (na primeira vez, esse processo vai demorar um pouco).
 
 ```docker
 docker ps
 ```
+
+
+
+Iniciados, acesse o servidor da aplicação, neste caso, a própria máquina apontando para porta definida no stack.yml [http://localhost:8080/](http://localhost:8080/).
+
 
 
 
