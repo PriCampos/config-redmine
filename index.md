@@ -1,5 +1,4 @@
 ## Gerenciamento de Projetos com Redmine
----
 
 ### Introdução
 
@@ -7,17 +6,19 @@ De acordo com [site oficial](https://www.redmine.org/), Redmine é um aplicativo
 
 ### Principais Características
 
+---
+
 ### Instalando o Redmine
 
 A instalação do Redmine pode ser via:  i) instalador, ii) com Docker ou iii) manualmente.
 
-Neste manual, a instalação será através do Docker e utilizando o SGBD MySQL. Caso não tenha o Docker instalado, acesse o site oficial [https://www.docker.com/](https://www.docker.com/), faça o download de acordo com o Sistema Operacional da sua máquina. ;)
+Neste manual, a instalação será através do Docker Composer e utilizando o SGBD MySQL, mas, o Redmine também integra com outros bancos. Caso ainda não tenha o Docker instalado, acesse o site oficial [https://www.docker.com/](https://www.docker.com/), faça o download de acordo com o Sistema Operacional da sua máquina.
 
 ```docker
 docker version
 ```
 
-Instalado o Docker e com o mesmo em execução, vamos criar nosso ambiente.
+Instalado o Docker e com o mesmo em iniciado, vamos criar nosso ambiente.
 
 Acesse o [Docker Hub](https://hub.docker.com/_/redmine) e baixe a imagem Redmine.
 
@@ -25,7 +26,7 @@ Exemplo com docker stack deploy: Crie um repositório, no arquivo .yml defina os
 
 stack.yml 
 
-**(lembre de alterar as senhas e o nome do root do banco e do usuário redmine)**
+**(lembre de alterar a senha e o nome da base de dados MySQL)**
 
 ```yaml
 version: '3.1'
