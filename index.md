@@ -22,9 +22,9 @@ Instalado o Docker e com o mesmo em iniciado, vamos criar nosso ambiente.
 
 Acesse o [Docker Hub](https://hub.docker.com/_/redmine) e baixe a imagem Redmine.
 
-Exemplo com docker stack deploy: Crie um repositório, no arquivo .yml defina os serviços com a infraestrutura desejada.
+**Exemplo com docker stack deploy:** Crie um repositório, no arquivo .yml defina os serviços com a infraestrutura desejada.
 
-stack.yml 
+[stack.yml](https://github.com/PriCampos/config-redmine/blob/master/stack.yml) 
 
 ```yaml
 version: '3.1'
@@ -51,7 +51,7 @@ services:
 
 **(lembre de alterar a senha e o nome da base de dados)**
 
-No repositóri onde foi criado o arquivo Docker Compose, execute:
+No repositório onde foi criado o arquivo Docker Compose, execute:
 
 ```docker-compose
 docker-compose -f stack.yml up
@@ -63,6 +63,7 @@ Verifique se os serviços foram iniciados (na primeira vez, esse processo vai de
 docker ps
 ```
 
+![print do terminal mostrando as imagens do docker iniciadas](https://raw.githubusercontent.com/PriCampos/config-redmine/master/images/imagens-docker.png)
 
 
 Iniciados, acesse o servidor da aplicação, neste caso, a própria máquina apontando para porta definida no stack.yml [http://localhost:8080/](http://localhost:8080/).
