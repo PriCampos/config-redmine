@@ -26,8 +26,6 @@ Exemplo com docker stack deploy: Crie um repositório, no arquivo .yml defina os
 
 stack.yml 
 
-**(lembre de alterar a senha e o nome da base de dados MySQL)**
-
 ```yaml
 version: '3.1'
 
@@ -50,6 +48,8 @@ services:
       MYSQL_ROOT_PASSWORD: priscila
       MYSQL_DATABASE: priscila
 ```
+
+**(lembre de alterar a senha e o nome da base de dados)**
 
 No repositóri onde foi criado o arquivo Docker Compose, execute:
 
